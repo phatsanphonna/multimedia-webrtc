@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>WebRTC</h1>
+
+    <div class="videos">
+        <span>
+            <h3>Local Stream</h3>
+            <video id="vdo_local" autoplay playsinline></video>
+        </span>
+        <span>
+            <h3>Remote Stream</h3>
+            <video id="vdo_remote" autoplay playsinline></video>
+        </span>
+    </div>
+
+    <div class="operation">
+        <h2>Start Stream</h2>
+        <button id="btn_webcam">Start stream</button>
+
+        <h2>2. Offer</h2>
+        <button id="btn_offer" disabled>Offer</button>
+        <input type="text" id="input_offer">
+
+        <h2>3. Answer</h2>
+        <input id="input_answer">
+        <button id="btn_answer" disabled>Answer</button>
+    </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDhyLRP0GsvkLPCVttP8bDTtW-gdS8asZA",
+            authDomain: "mt-webrtc-ab5df.firebaseapp.com",
+            projectId: "mt-webrtc-ab5df",
+            storageBucket: "mt-webrtc-ab5df.appspot.com",
+            messagingSenderId: "725678029289",
+            appId: "1:725678029289:web:51d8b6276d993b29fdb378"
+        };
+    </script>
+    <script type="module" src="webrtc.js"></script>
+</body>
+
+</html>
